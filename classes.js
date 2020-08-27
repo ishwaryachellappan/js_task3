@@ -1,17 +1,25 @@
 
 
-function Person() {
-    this.question = "unknown";
-    
+class Welcome {
+  constructor(cyso) {
+    this.welcomename = cyso;
+  }
 }
 
-var person1 = new Person();
-person1.question = "Hey buddy!your name please...";
+mywelcome = new Welcome(" ");
+const readline = require('readline');
 
-            
-console.log(person1.question );
-var person2 = new Person();
-person2.name = "RIYA";
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-console.log("welcome " + person2.name + "  cyphersource is glad to welcome you!"  );
+rl.question('Hey buddy!your name please..? ', (answer) => {
+  // TODO: Log the answer in a database
+  console.log(`welcome ${answer}! cypher source is glad to connect with you!`);
 
+  rl.close();
+
+});
+
+console.log( mywelcome.welcomename);
