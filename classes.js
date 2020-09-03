@@ -1,4 +1,4 @@
-
+//creating a class
 
 class Welcome {
   constructor(cyso) {
@@ -8,6 +8,8 @@ class Welcome {
 
 mywelcome = new Welcome(" ");
 const readline = require('readline');
+
+//getting input through readline() method
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -21,5 +23,7 @@ rl.question('Hey buddy!your name please..? ', (answer) => {
   rl.close();
 
 });
+
+//priniting the output through console.log()
 
 console.log( mywelcome.welcomename);
