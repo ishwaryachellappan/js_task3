@@ -1,8 +1,7 @@
 
 console.log("Departments in cypher source");
 
-var student;
-this.student=student;
+
 
 //declaring object student
 var student = { department:"Machine learning", department1: "Networking", department2: "Gaming" };
