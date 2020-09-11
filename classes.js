@@ -1,11 +1,11 @@
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
-// Your code here!
+// getting input through readline method
 const readline = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 });
-
+//creating classes named CySo
 class CySo {
     
     getValue(getusername){
